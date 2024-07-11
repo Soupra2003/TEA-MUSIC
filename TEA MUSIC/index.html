@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA MUSIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/download-modified.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <nav> 
+        <li class="brand"><img src="images/download-modified.png" alt="TEA MUSIC">TEA MUSIC</li>
+        <ul>
+            <div class="search-menu">
+                <div class="search">
+                    <input placeholder="Search for Song, Artist and more" class="search-input"></input>
+                    <div class="search-icon">
+                        <button id="searchButton"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="menu">
+                        <button id="signupButton">Sign Up</button>
+                        <button id="loginBtn" onclick="document.getElementById('loginModal').style.display='block'">Log in</button>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+   
+    <div class="sidebar1">
+        <div class="hamburger1">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="sidebar-item">
+            <a href="TEA.html"><i class="fa-solid fa-house"></i> Home</a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#"><i class="fa-solid fa-circle-info"></i> About</a>
+        </div>
+        <div class="sidebar-item">
+            <a href="favourite/index.html"><i class="fa-solid fa-star"></i> Favourite</a>
+        </div>
+        <div class="sidebar2-item upgradeBtn sidebar2">
+            <a href="upgrade/index.html" target="_blank"><i class="fa-solid fa-crown"></i> Upgrade</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <section class="mainbody">
+            <div class="content1 ">
+            <section class="search-results">
+            <div id="searchResults" class="cardmusic"></div>
+            </div>
+        </section>
+        <audio id="audioElement1"></audio>
+            <p class="section-title">Inbuild Song</p>
+            <div class="cardmusic">
+                <div class="card">
+                    <img src="https://a10.gaanacdn.com/gn_img/albums/a7LWBaz3zX/7LWBnrDOWz/size_m.webp" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Janam Janam - Dilwale</h3>
+                        <p class="artist-name">Arijit, Antra, Pritam</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="0"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/saware.jpeg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Saware - <br>Phantom</h3>
+                        <p class="artist-name">Pritam, Arijit Singh</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="1"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/tere hawale.jpg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Tere Hawaale - Laal Singh .....</h3>
+                        <p class="artist-name">Arijit Singh, Shilpa Rao</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="2"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/mast magan.jpeg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Mast Magan - 2 States</h3>
+                        <p class="artist-name">Arijit Singh, Chinmayi</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="3"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/tum hi ho.jpeg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Tum Hi Ho - Aashiqui 2</h3>
+                        <p class="artist-name">Mithoon, Arijit Singh</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="4"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/o mahhi.jpg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">O Maahi - <br>Dunki</h3>
+                        <p class="artist-name">Arijit Singh</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="5"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/chaleya.jpeg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Chaleya - <br>Jawan</h3>
+                        <p class="artist-name">Arijit Singh, Shilpa Rao</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="6"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/ve kamleya.jpeg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Ve Kamleya - <br>Rocky aur..... </h3>
+                        <p class="artist-name">Arijit Singh, Shreya Ghosal</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="7"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/pehli dafa.jpeg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Pehli Dafa - <br>Own Album</h3>
+                        <p class="artist-name">Atif Aslam</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="8"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGp9gJrdklngLwqEpXhKNi_sKCyLwUfNkWYw&s" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Main Rahoon <br> ya na rahoon</h3>
+                        <p class="artist-name">Armaan Malik</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="8"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://pagalnew.com/coverimages/soulmate-ek-tha-raja-500-500.jpg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Soulmate - <br> Ek Tha Raja</h3>
+                        <p class="artist-name">Arijit, Badshah</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="9"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://pagalnew.com/coverimages/tum-se-teri-baaton-mein-aisa-uljha-jiya-500-500.jpg" alt="Song Cover" class="cover-img">
+                    <div class="card-content">
+                        <h3 class="song-title">Tum Se - Teri Baaton....</h3>
+                        <p class="artist-name">Raghav, Varun, Sachin</p>
+                        <button class="play-button"><i class="songItemplay fa-solid fa-play" id="9"></i> </button>
+                        <button class="love-button"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <div class="bottom">
+        <div class="songname">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/a7LWBaz3zX/7LWBnrDOWz/size_m.webp" alt="Song Cover" id="masterSongCover">
+            <span id="mastersongName">Janam Janam - Arijit, Antra</span>
+        </div>
+        <input type="range" name="range" id="myprogressbar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-step-backward" id="previous"></i>
+            <i class="far fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-step-forward" id="next"></i>
+        </div>
+    </div>
+    <iframe src="audioplayer.html" id="audioFrame" style="display:none;"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>

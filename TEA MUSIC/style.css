@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=varela+Round&display=swap'); */
+body {
+    background-color: rgb(70, 70, 70);
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-search {
+    width: 520px;
+    height: 45px;
+    background-color: white;
+    align-items: center;
+}
+
+.search-input {
+    width: 500px;
+    padding: 4px 25px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-left: 80px;
+    margin-top: -2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    /* justify-content: space-between; */
+    height: 65px;
+    color: white;
+    background-color: black;
+}
+
+nav ul {
+    padding: 0 12px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.brand img {
+    width: 45px;
+    padding: 0 8px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.search{
+    display: flex;
+}
+.search-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#searchButton {
+    padding: 7px 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.15rem;
+    color: rgb(0, 0, 0);
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    /* margin-top: 10px; */
+}
+.menu{
+    display: flex;
+    margin-left: 400px ;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+#loginBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 25px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: none;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.735);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 100px rgba(0, 251, 255, 0.5);
+}
+
+.modal-content span{
+    color: #ffffff;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1px 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+button[type="submit"] {
+    color: white;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: linear-gradient(120deg, white , black,white);
+}
+#signupButton{
+    color: rgb(178, 178, 178);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 2px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    border:none;
+}
+
+.sidebar1 {
+    position: fixed;
+    top: 65px; /* Adjust to the height of the navbar */
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-item i {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.sidebar-item a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+.sidebar-item:hover {
+    background: linear-gradient(120deg, rgb(0, 0, 0), white);
+}
+.upgradeBtn{
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+.sidebar2 {
+    margin-top: 385px;
+    background: linear-gradient(90deg, black, gold);
+    color: white;
+    font-size: 1.4rem;
+}
+
+.sidebar2-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    cursor: pointer;
+   
+}
+
+.sidebar2-item i {
+    margin-right: 10px;
+    
+    
+}
+.sidebar2-item a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+.sidebar2-item:hover {
+    background: linear-gradient(120deg, black, gold, black);
+}
+
+#gif {
+    width: 200px;
+    margin-top: 210px;
+    margin-left: 20px;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 80px 20px;
+}
+
+.mainbody {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #ffffff; /* Gold color for title */
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    /* text-align: center; */
+    margin-left: 80px;
+    margin-top: 30px;
+}
+#section-title1{
+    font-size: 2.2rem;
+    color: #ffffff; /* Gold color for title */
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    /* text-align: center; */
+    margin-left: 60px;
+    opacity: 0;
+}
+
+.cardmusic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.cardmusic .card {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.224);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardmusic .card:hover {
+    background-color: #444;
+    box-shadow: 0 4px 20px rgba(0, 255, 174, 0.7); /* Glow effect */
+}
+
+.cover-img {
+    height: 150px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.song-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ffffff; /* Gold color for song title */
+}
+
+.artist-name {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.play-button {
+    background-color: #4caeaf; /* Gold color for button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.play-button i {
+    margin-right: 5px;
+}
+
+.play-button:hover {
+    background-color: #000000;
+}
+
+.love-button {
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.love-button:hover{
+   color: red;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.89);
+    z-index: 1000;
+    margin-left: 295px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.bottom-top {
+    /* display: flex; */
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#myprogressbar {
+    flex-grow: 1;
+    margin: 0 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #555;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#myprogressbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #219eb9; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#myprogressbar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #219eb9; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.songname {
+    display: flex;
+    align-items: center;
+}
+
+.songname img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#mastersongName {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.bottom-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.icons i {
+    color: #ffffff; /* Gold color for icons */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: #219eb9;
+}
+.hamburger{
+    display: none;
+}
+/* responsive code */
+@media screen and (max-width: 1400px){
+    .search-input{
+        margin-left: 5px;
+        width: 130px
+    }
+    .menu{
+        margin-left: 300px;
+    }
+}
+@media screen and  (max-width: 768px) {
+   
+    .brand img{
+        width: 35px;
+    }
+    .brand{
+        font-size: 0.9rem;
+    }
+    .search-input{
+        margin-left: 5px;
+        width: 100px
+    }
+  
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .hamburger .line{
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 6px 0;
+    }
+    .menu.active{
+        height: 80px;
+    }
+    .menu {
+        height: 0px;
+        position: absolute;
+        top: 65px;
+        left: 10;
+        right: 0;
+        width: 100vw;
+        background: #000000;
+        transition: 0.2s;
+        justify-content: space-evenly;
+        box-shadow: 0 1px 9px white;
+        
+    }
+    .menu.active button{
+        opacity: 1;
+    }
+    .menu button{
+        opacity: 0;
+    }
+
+    /* .hamburger1{
+        display: block;
+        cursor: pointer;
+        margin-left: 20px;
+        background-color: transparent;
+    }
+    .hamburger1 .line{
+            width: 20px;
+            height: 3px;
+            background: white;
+            margin: 6px 0;
+            border-radius: 2px;
+    } */
+    /* .sidebar1.active{
+        height: 250px;
+    }
+    .sidebar1{
+        display: none;
+        position: relative;
+        height: 200px;
+        width: 360px;
+        left: 0;
+        right: 0;
+       padding-top: 0px;
+       transition: 0.s;
+       top: 135px;
+    }
+    .sidebar2{
+        margin-top: 8px;
+    }
+    .sidebar1.active .sidebar-item{
+        opacity: 1;
+    }
+    .sidebar-item{
+        opacity:;
+    }
+    .sidebar1.active .sidebar2-item{
+        opacity: 1;
+    }
+    .sidebar2-item{
+        opacity: ;
+    } */
+     .sidebar1{
+        display: none;
+     }
+
+     .card.active{
+        box-shadow: 0 4px 20px rgba(0, 255, 174, 0.7); /* Glow effect */
+     }
+     .content{
+    margin-left: -40px;
+  }
+  .bottom{
+    display: block;
+    margin-left: 30px;
+  }
+  #myprogressbar {
+    margin: 10px 0px;
+    height: 1px;
+   width: 93%;
+}
+.icons i {
+    margin: 0 30px;
+}
+.icons{
+    margin-left: 15px;
+}
+}
